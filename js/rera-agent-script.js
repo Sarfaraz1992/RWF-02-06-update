@@ -28,8 +28,8 @@
      localStorage.setItem("displayAgentContact", agentContact);
 
 
-     //  document.querySelector("#show-agent-name").innerHTML = agentName;
-     //  document.querySelector("#show-agent-contact").innerHTML = agentContact;
+      document.querySelector("#show-agent-name").innerHTML = agentName;
+      document.querySelector("#show-agent-contact").innerHTML = agentContact;
 
 
    });
