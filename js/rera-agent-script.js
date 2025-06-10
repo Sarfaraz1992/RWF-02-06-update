@@ -13,8 +13,11 @@
      }
      document.querySelector('.modal.agent-model').setAttribute("id", targetModel);
 
-     let agentName = el.previousElementSibling.innerHTML;
+    //  let agentName = el.previousElementSibling.innerHTML;
+     let agentName = el.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
      console.log(agentName);
+
+
      document.getElementById("agentName").value = agentName;
 
      let agentContact = el.nextElementSibling.innerHTML;
