@@ -28,8 +28,8 @@
      localStorage.setItem("displayAgentContact", agentContact);
 
 
-      document.querySelector("#show-agent-name").innerHTML = agentName;
-      document.querySelector("#show-agent-contact").innerHTML = agentContact;
+      // document.querySelector("#show-agent-name").innerHTML = agentName;
+      // document.querySelector("#show-agent-contact").innerHTML = agentContact;
 
 
    });
@@ -39,8 +39,8 @@
 
  document.getElementById("agentInput").addEventListener("click", function () {
 
-   document.getElementById("show-agent-name").textContent = localStorage.getItem("displayAgentName") || "No Agent Name";
-   document.getElementById("show-agent-contact").textContent = localStorage.getItem("displayAgentContact") || "No Agent Contact";
+   document.getElementById("show-agent-name").textContent = localStorage.getItem("displayAgentName");
+   document.getElementById("show-agent-contact").textContent = localStorage.getItem("displayAgentContact");
 
    // Optional: Clear after use
    localStorage.clear();
