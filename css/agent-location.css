@@ -4,7 +4,8 @@
     padding: 40px 0px;
 }
 .agent-location #accordion,
-.agent-location #accordion-other-city {
+.agent-location #accordion-other-city,
+.agent-location #accordion-pune-city {
     padding: 10px 0px;
 }
 .agent-location .card {
@@ -17,14 +18,21 @@
     border-color: #dee2e6 #dee2e6 #fff !important;
 }
 .agent-location .nav-tabs .nav-link {
-    color: #000000;
+    color: #737070;
+    background: #eeeeee;
+    font-size: 18px;
+    font-weight: 500;
 }
-
-
+.agent-location .nav-tabs .nav-item {
+    margin-right: 5px;
+}
 .agent-location .card-header .card-link{
     color: var(--primary-color); 
-    font-weight: bold;   
+    font-weight: 500;   
     font-size: 18px;
+}
+.agent-location .card-header {
+    padding: 8px 16px; 
 }
 .agent-location .card-body .agent-details {
     background: var(--third-color);
@@ -59,10 +67,24 @@
 .agent-location .agent-profile .agent-profile-details .agent-name {
     color: var(--primary-color);
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding-top: 5px;
     line-height: 20px;
+    font-weight: bold;
 }
+.agent-location .agent-profile .agent-profile-details .agent-occu,
+.agent-location .agent-profile .agent-profile-details .rera-num {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.agent-location .agent-profile .agent-profile-details .rera-num {
+    padding-bottom: 5px;
+}
+.agent-location .agent-profile .agent-profile-details .agent-occu span,
+.agent-location .agent-profile .agent-profile-details .rera-num span{
+    color: var(--primary-color);
+}
+
 .agent-location .agent-profile .agent-profile-details .get-contact {
     background-color: var(--primary-color);
     font-size: 16px;
@@ -110,5 +132,34 @@
     .agent-location .agent-profile img {    
         height: 100%;
     }
+    .agent-location .nav-tabs .nav-link {
+        font-size: 14px;
+        padding: 6px 8px;
+        font-weight: 500;
+    }
+    .agent-location .card-header .card-link {
+        font-size: 14px;
+    }
+    .agent-location .nav-tabs .nav-item {
+        margin-right: 5px;
+    }
+    .agent-location .card-header {
+        padding: 4px 10px;
+    }
 }
-@media (max-width: 374px) {}
+@media (max-width: 374px) {
+    .agent-location .nav-tabs .nav-link {
+        font-size: 12px;
+        padding: 5px 7px;
+        font-weight: 500;
+    }
+    .agent-location .card-header .card-link {
+        font-size: 12px;
+    }
+    .agent-location .nav-tabs .nav-item {
+        margin-right: 3px;
+    }
+    .agent-location .card-header {
+        padding: 0px 10px 4px;
+    }
+}
